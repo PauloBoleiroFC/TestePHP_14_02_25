@@ -12,6 +12,9 @@ class Customer extends Model
 
     public $with = ["requests"];
 
+    /**
+     * @var string[]
+     */
     protected $fillable = [
         'name',
         'email',
@@ -25,6 +28,9 @@ class Customer extends Model
         'registered_at'
     ];
 
+    /**
+     * @var string[]
+     */
     protected $dates = ['deleted_at', 'registered_at'];
 
     /**
